@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Práctica de estilos - pseudoclases</title>
+		<style>	
+			/* los estilos se aplican por orden que se definen */
+			a {	
+				color:red; 
+				text-decoration:none;
+			}		
+			a:visited {
+				color:green;
+				text-decoration:none
+			}			
+			a:focus {
+				color:blue;
+				text-decoration:underline;
+			}
+			a:hover { /* se aplica después de a:visited y a:focus */
+				background-color:red;
+				color:white;
+				text-decoration:underline;
+			}
+			a:active { /* para que se aplique debe estar detras de a:hover */
+				color:orange;
+				text-decoration:none
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<h1>Principales buscadores</h1>
+		<ul>
+			<li>
+				<a href="https://www.google.es/" target="_blank">Google</a>
+			</li>
+			<li>
+				<a href="https://www.bing.es/" target="_blank">Bing</a>
+			</li>
+			<li>
+				<a href="https://es.yahoo.com/" target="_blank">Yahoo!</a>
+			</li>
+			<li>
+				<a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>
+			</li>
+			<li>
+				<a href="https://www.startpage.com/es/" target="_blank">Startpage</a>
+			</li>
+			<li>
+				<a href="https://gibiru.com/" target="_blank">Gibiru</a>
+			</li>
+		</ul>
+	</body>
+</html>
